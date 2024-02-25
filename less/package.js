@@ -2,7 +2,7 @@ Package.describe({
   name: 'less',
   version: '4.0.0',
   summary: 'Leaner CSS language',
-  documentation: 'README.md',
+  documentation: 'README.md'
 });
 
 Package.registerBuildPlugin({
@@ -12,12 +12,12 @@ Package.registerBuildPlugin({
     "ecmascript@0.16.8-beta300.0",
   ],
   sources: [
-    'plugin/compile-less.js',
+    'plugin/compile-less.js'
   ],
   npmDependencies: {
     "@babel/runtime": "7.14.8",
-    "less": "4.1.1",
-  },
+    "less": "4.1.1"
+  }
 });
 
 Package.onUse(function (api) {
