@@ -48,10 +48,7 @@ export class AsynchronousCursor {
       this._pendingNext = null;
       return result;
     } catch (e) {
-      // KLAB
-      // console.error(e);
-      throw e;
-      // KLAB
+      console.error(e);
     } finally {
       this._pendingNext = null;
     }
